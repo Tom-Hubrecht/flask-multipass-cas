@@ -22,7 +22,18 @@ There are bult-in authentication and identity providers for:
  * `SAML <https://github.com/indico/flask-multipass/blob/master/flask_multipass/providers/saml.py>`_
  * `Shibboleth <https://github.com/indico/flask-multipass/blob/master/flask_multipass/providers/shibboleth.py>`_
  * `LDAP <https://github.com/indico/flask-multipass/blob/master/flask_multipass/providers/ldap/providers.py>`_
+ * `CAS <https://github.com/Tom-Hubrecht/flask-multipass/blob/master/flask_multipass/providers/cas.py>`_
 
 Those can be used simultaneously and interchangeably (e.g. authenticate with OAuth and search users with LDAP).
 
 Documentation is available at https://flask-multipass.readthedocs.org
+
+Dependencies
+============
+
+* <https://github.com/discogs/python-cas-client>_
+
+```sh
+git clone https://github.com/discogs/python-cas-client
+pip install python-cas-client/
+```
